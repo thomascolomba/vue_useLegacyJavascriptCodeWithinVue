@@ -3,11 +3,11 @@ import App from './App.vue'
 import router from './router'
 
 Vue.config.productionTip = false
-
+/*
 function myMethod(){
 	return "1234";
 }
-
+*/
 window.f1 = myMethod;
 
 // import './externaljs/myCode'
@@ -21,5 +21,6 @@ new Vue({
   mounted() {
     console.log(window.f1)
 	console.log(this.myMethod)
+	console.log(this.myMethod())
   }
 }).$mount('#app')
